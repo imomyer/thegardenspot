@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `The Garden Spot`,
-    siteUrl: `thegardenspot.nyc`
+    siteUrl: `https://thegardenspot.nyc`
   },
   plugins: ["gatsby-plugin-google-gtag"]
 };
