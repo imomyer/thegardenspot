@@ -2,7 +2,7 @@ import * as React from "react"
 
 const IndexPage = () => {
   return (
-    <main>
+    <main style={{textAlign: 'center'}}>
       THE GARDEN SPOT
     </main>
   )
