@@ -4,6 +4,33 @@ body {
   text-align: center;
 }
 
-img {
-    width: 100%
+.title-container {
+  position:relative;
+}
+
+h1 {
+  position:fixed;
+  width:100%;
+  background: mintcream;
+  text-align: center;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  margin-top: 40px;
+}
+
+.half { 
+  width: 50%;
+  display: inline-block;
+}
+.full {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (max-width: 650px) {
+  .half {width: 100%}
 }
