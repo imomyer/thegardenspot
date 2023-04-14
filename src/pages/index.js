@@ -7,6 +7,11 @@ const IndexPage = () => {
     <main>
       <div class="title-container"><h1>THE GARDEN SPOT</h1></div>
       <div class="content">
+        <img
+      class="half"
+      src="../..//Roll_309-008.jpg"
+      alt="The Garden Spot"
+    />
       <img
       class="half"
       src="../..//Roll_310-36.jpg"
