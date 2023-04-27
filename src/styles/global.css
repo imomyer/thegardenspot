@@ -1,7 +1,9 @@
+/* html {height: 100%;} */
 body {
   font-family: 'Courier Prime', monospace;
   background: mintcream; 
   text-align: center;
+  /* height: 100%; */
 }
 
 .title-container {
@@ -23,13 +25,40 @@ h1 {
   text-align: center;
 }
 
-.half { 
-  width: 50%;
-}
-.full {
+.content > div { padding: 10px;}
+
+img {
+  height: auto;
   width: 100%;
 }
 
-@media screen and (max-width: 650px) {
-  .half {width: 100%}
+@media screen and (min-width: 768px) {
+  .content>div {
+      padding: 40px;
+    }
+  img.landscape {
+    height: auto;
+    width: 768px
+  }
+  img.portrait {
+    height: auto;
+    width: 500px
+  }
 }
+@media screen and (min-width: 1280px) {
+  .content>div {
+      padding: 60px;
+    }
+  img.landscape {
+    height: auto;
+    width: 1080px
+  }
+}
+/* 
+@media screen and (max-width: 1080px) {
+  img {
+    height: 600px;
+    width: auto;
+    padding: 20px;
+  }
+} */
