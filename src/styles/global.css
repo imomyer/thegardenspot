@@ -42,7 +42,7 @@ img {
   }
   img.portrait {
     height: auto;
-    width: 500px
+    width: 350px
   }
 }
 @media screen and (min-width: 1280px) {
@@ -53,12 +53,9 @@ img {
     height: auto;
     width: 1080px
   }
+        img.portrait {
+          height: auto;
+          width: 400px
+        }
+  
 }
-/* 
-@media screen and (max-width: 1080px) {
-  img {
-    height: 600px;
-    width: auto;
-    padding: 20px;
-  }
-} */
