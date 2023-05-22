@@ -9,6 +9,13 @@ const IndexPage = () => {
       <div class="content">
         <div>
             <img
+          class="portrait"
+          src="../../Roll_306-32.jpg"
+          alt="The Garden Spot"
+        />
+        </div>
+        <div>
+            <img
           class="landscape"
           src="../../Roll_311-11.jpg"
           alt="The Garden Spot"
