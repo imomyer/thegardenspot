@@ -5,15 +5,15 @@ import '../styles/global.css'
 
 const IndexPage = ({data}) => {
   return (
-    <main class="index-page">
-      <div class="title-container"><h1>THE GARDEN SPOT</h1></div>
+    <main className="index-page">
+      <div className="title-container"><h1>THE GARDEN SPOT</h1></div>
 
-      <div class="content-container">
+      <div className="content-container">
         {data.allImagesJson.nodes.map((image) => (
-        <div key={image.id}>
+        <div key={image.slug}>
           <Link to={`/images/${image.slug}`}>
             <img
-              class="landscape"
+              className="landscape"
               src={`../../${image.fileName}`}
               alt={image.title}
             />
