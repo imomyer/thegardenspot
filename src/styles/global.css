@@ -1,4 +1,3 @@
-/* html {height: 100%;} */
 body {
   font-family: 'Courier Prime', monospace;
   background: mintcream; 
@@ -9,32 +8,32 @@ body {
 }
 
 h1 {
-  position:fixed;
   width:100%;
   background: mintcream;
   margin: 0;
-  top: 0;
-  left: 45px;
 }
 
-.content {
-  margin-top: 40px;
-}
+.content-container { margin-top: 40px; }
 
-.content > div { display:inline-block; padding: 10px;}
+.index-page .content-container > div { display:inline-block; padding: 10px; }
+.index-page .content-container img { width: 100%; height: auto;}
 
-img {
-  height: 150px;
+.image-page .title-container span { margin-top: 5px; display: inline-block; }
+.image-page .content-container .image-container img { width: 100%; height: auto; }
+
+
+
+@media screen and (min-width: 500px) {
+  .index-page .content-container > div { padding: 40px; }
+  .index-page .content-container img { height: 150px; }
+
+  .image-page .content-container .image-container img { width: 75%; height: auto; }
 }
 
 @media screen and (min-width: 768px) {
-  .content>div {
-      padding: 40px;
-    }
+  .image-page .content-container .image-container img { width: 50%; height: auto; }
 }
+
 @media screen and (min-width: 1280px) {
-  .content>div {
-      padding: 60px;
-    }
-  
+  .index-page .content-container > div { padding: 60px; }
 }

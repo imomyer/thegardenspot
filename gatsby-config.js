@@ -48,5 +48,13 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content/`, // Path to your JSON files
+        name: `images`,
+      },
+    },
+    `gatsby-transformer-json`,
   ],
 };
