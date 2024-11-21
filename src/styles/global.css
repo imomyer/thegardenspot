@@ -1,9 +1,6 @@
-/* html {height: 100%;} */
 body {
   font-family: 'Courier Prime', monospace;
   background: mintcream; 
-  text-align: center;
-  /* height: 100%; */
 }
 
 .title-container {
@@ -11,51 +8,32 @@ body {
 }
 
 h1 {
-  position:fixed;
   width:100%;
   background: mintcream;
-  text-align: center;
   margin: 0;
-  top: 0;
-  left: 0;
 }
 
-.content {
-  margin-top: 40px;
-  text-align: center;
-}
+.content-container { margin-top: 40px; }
 
-.content > div { padding: 10px;}
+.index-page .content-container > div { display:inline-block; padding: 10px; }
+.index-page .content-container img { width: 100%; height: auto;}
 
-img {
-  height: auto;
-  width: 100%;
+.image-page .title-container span { margin-top: 5px; display: inline-block; }
+.image-page .content-container .image-container img { width: 100%; height: auto; }
+
+
+
+@media screen and (min-width: 500px) {
+  .index-page .content-container > div { padding: 40px; }
+  .index-page .content-container img { height: 150px; }
+
+  .image-page .content-container .image-container img { width: 75%; height: auto; }
 }
 
 @media screen and (min-width: 768px) {
-  .content>div {
-      padding: 40px;
-    }
-  img.landscape {
-    height: auto;
-    width: 768px
-  }
-  img.portrait {
-    height: auto;
-    width: 350px
-  }
+  .image-page .content-container .image-container img { width: 50%; height: auto; }
 }
+
 @media screen and (min-width: 1280px) {
-  .content>div {
-      padding: 60px;
-    }
-  img.landscape {
-    height: auto;
-    width: 1080px
-  }
-        img.portrait {
-          height: auto;
-          width: 400px
-        }
-  
+  .index-page .content-container > div { padding: 60px; }
 }
