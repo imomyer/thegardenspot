@@ -8,8 +8,6 @@ const GeneralImagePage = ({data, pageContext}) => {
     let imageTitle = image.title;
     let imageOrientation = image.orientation;
 
-    console.log(imageOrientation)
-
     if (item.images) {
       image = data.imagesJson.images.filter((image) => image.slug === pageContext.slug)[0];
       imagePath = `../../../${image.fileName}`;
