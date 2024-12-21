@@ -15,25 +15,60 @@ h1 {
 
 .content-container { margin-top: 40px; }
 
-.index-page .content-container > div { display:inline-block; padding: 10px; }
-.index-page .content-container img { width: 100%; height: auto;}
+.index-page .content-container .singular { display:inline-block; padding: 40px; }
+.index-page .content-container .project {display: block; }
+.index-page .content-container .project > div { display: inline-block; padding: 40px; }
+.index-page .content-container img.landscape { width: 335px; height: auto;}
+.index-page .content-container img.portrait { width: 150px; height: auto; }
 
 .image-page .title-container span { margin-top: 5px; display: inline-block; }
-.image-page .content-container .image-container img { width: 100%; height: auto; }
+
+.image-page .content-container img.landscape {
+  width: 60%;
+  height: auto;
+}
+.image-page .content-container img.portrait {
+  width: 40%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .image-page .content-container img.portrait {
+    width: 60%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    .index-page .content-container img.landscape {
+      width: 100%;
+      height: auto;
+    }
+    .index-page .content-container img.portrait {
+      width: 100%;
+      height: auto;
+    }
+    .image-page .content-container img.landscape {
+      width: 100%;
+      height: auto;
+    }
+  
+    .image-page .content-container img.portrait {
+      width: 100%;
+      height: auto;
+    }
+}
 
 
 
-@media screen and (min-width: 500px) {
+/* @media screen and (min-width: 500px) {
   .index-page .content-container > div { padding: 40px; }
   .index-page .content-container img { height: 150px; }
 
-  .image-page .content-container .image-container img { width: 75%; height: auto; }
 }
 
-@media screen and (min-width: 768px) {
-  .image-page .content-container .image-container img { width: 50%; height: auto; }
-}
+
 
 @media screen and (min-width: 1280px) {
   .index-page .content-container > div { padding: 60px; }
-}
+} */
