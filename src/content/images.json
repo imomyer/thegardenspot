@@ -1,5 +1,12 @@
 [
   {
+    "itemID": "image-2",
+    "title": "The Garden Spot",
+    "slug": "R0000773",
+    "fileName": "R0000773.jpg",
+    "orientation": "portrait"
+  },
+  {
     "itemID": "project-1",
     "title":"The Garden Spot",
     "project": "mccarren-park",
@@ -40,24 +47,17 @@
     "orientation": "portrait"
   },
   {
-    "itemID": "image-3",
-    "title": "The Garden Spot",
-    "slug": "R0000705",
-    "fileName": "R0000705.jpg",
-    "orientation": "landscape"
-  },
-  {
-    "itemID": "image-2",
-    "title": "The Garden Spot",
-    "slug": "R0000773",
-    "fileName": "R0000773.jpg",
-    "orientation": "portrait"
-  },
-  {
     "itemID": "image-1",
     "title": "The Garden Spot",
     "slug": "R0000643",
     "fileName": "R0000643.jpg",
     "orientation": "portrait"
+  },
+  {
+    "itemID": "image-3",
+    "title": "The Garden Spot",
+    "slug": "R0000705",
+    "fileName": "R0000705.jpg",
+    "orientation": "landscape"
   }
 ]
