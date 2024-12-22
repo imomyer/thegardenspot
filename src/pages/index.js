@@ -9,16 +9,30 @@ const IndexPage = ({data}) => {
       <div className="title-container"><h1>THE GARDEN SPOT</h1></div>
 
       <div className="content-container">
-        {data.allImagesJson.nodes.map((image) => (
-        <div key={image.slug}>
-          <Link to={`/images/${image.slug}`}>
-            <img
-              className="landscape"
-              src={`../../${image.fileName}`}
-              alt={image.title}
-            />
-          </Link>
-        </div>
+        {data.allImagesJson.nodes.map((item, index) => (
+          <div key={`wrapper-${index}`} className={item.images ? 'project' : 'singular'}>
+            {item.images ? (
+                item.images.map((subItem) => 
+                  <div>
+                    <Link to={`/images/${item.project}/${subItem.slug}`} key={subItem.slug}>
+                      <img
+                        src={`../../${subItem.fileName}`}
+                        alt={subItem.title}
+                        className={subItem.orientation}
+                      />
+                    </Link>
+                  </div>
+                  )
+            ) : (
+              <Link to={`/images/${item.slug}`}>
+                <img
+                  src={`../../${item.fileName}`}
+                  alt={item.title}
+                  className={item.orientation}
+                />
+              </Link>
+            )}
+          </div>
         ))}
       </div>
     </main>
@@ -32,6 +46,14 @@ export const query = graphql`
         title
         slug
         fileName
+        project
+        orientation
+        images {
+          title
+          slug
+          fileName
+          orientation
+        }
       }
     }
   }

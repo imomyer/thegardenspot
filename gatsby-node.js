@@ -7,8 +7,13 @@ exports.createPages = async ({ graphql, actions }) => {
     query {
       allImagesJson {
         nodes {
-          id
+          itemID
           slug
+          project
+          images {
+            slug
+            fileName
+          }
         }
       }
     }
@@ -22,12 +27,29 @@ exports.createPages = async ({ graphql, actions }) => {
   const imageTemplate = path.resolve(`src/templates/image-page.js`);
 
   result.data.allImagesJson.nodes.forEach((node) => {
-    createPage({
-      path: `/images/${node.slug}`, // Customize the URL structure
-      component: imageTemplate,
-      context: {
-        slug: node.slug,
-      },
-    });
+    if (node.slug) {
+      createPage({
+        path: `/images/${node.slug}`, 
+        component: imageTemplate,
+        context: {
+          itemID: node.itemID,
+          slug: node.slug
+        },
+      });
+    } else {
+      if (node.images) {
+        node.images.forEach((image) => {
+          createPage({
+            path: `/images/${node.project}/${image.slug}`, 
+            component: imageTemplate,
+            context: {
+              itemID: node.itemID,
+              slug: image.slug
+
+            },
+          });
+        });
+      }
+    }
   });
 };
