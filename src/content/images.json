@@ -1,5 +1,24 @@
 [
   {
+    "itemID": "project-2",
+    "title":"The Garden Spot",
+    "project": "windows",
+    "images": [
+      {
+        "title": "The Garden Spot",
+        "slug": "DSCF7727",
+        "fileName": "DSCF7727.jpg",
+        "orientation": "portrait"
+      },
+      {
+        "title": "The Garden Spot",
+        "slug": "DSCF7818",
+        "fileName": "DSCF7818.jpg",
+        "orientation": "portrait"
+      }
+    ]
+  },
+  {
     "itemID": "image-2",
     "title": "The Garden Spot",
     "slug": "R0000773",
