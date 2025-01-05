@@ -1,5 +1,12 @@
 [
   {
+    "itemID": "image-7",
+    "title": "The Garden Spot",
+    "slug": "R0000774",
+    "fileName": "R0000774.jpg",
+    "orientation": "portrait"
+  },
+  {
     "itemID": "project-2",
     "title":"The Garden Spot",
     "project": "windows",
