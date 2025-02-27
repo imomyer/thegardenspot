@@ -1,10 +1,29 @@
 [
   {
-    "itemID": "image-8",
+    "itemID": "project-6",
     "title": "The Garden Spot",
-    "slug": "R0000753",
-    "fileName": "R0000753.jpg",
-    "orientation": "portrait"
+    "project": "abandoned field",
+    "images": [
+      {
+        "title": "The Garden Spot",
+        "slug": "R0001042",
+        "fileName": "R0001042.jpg",
+        "orientation": "landscape"
+      }
+    ]
+  },
+  {
+    "itemID": "project-5",
+    "title": "The Garden Spot",
+    "project": "subway",
+    "images": [
+      {
+        "title": "The Garden Spot",
+        "slug": "R0000753",
+        "fileName": "R0000753.jpg",
+        "orientation": "portrait"
+      }
+    ]
   },
   {
     "itemID": "project-4",
