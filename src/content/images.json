@@ -1,5 +1,12 @@
 [
   {
+    "itemID": "image-8",
+    "title": "The Garden Spot",
+    "slug": "R0001042",
+    "fileName": "R0001042.jpg",
+    "orientation": "landscape"
+  },
+  {
     "itemID": "project-4",
     "title":"The Garden Spot",
     "project": "snow-storm",
