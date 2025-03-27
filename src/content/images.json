@@ -1,4 +1,23 @@
 [
+    {
+    "itemID": "project-7",
+    "title": "The Garden Spot",
+    "project": "bricked up",
+    "images": [
+      {
+        "title": "The Garden Spot",
+        "slug": "R0001159",
+        "fileName": "R0001159.jpg",
+        "orientation": "portrait"
+      },
+      {
+        "title": "The Garden Spot",
+        "slug": "R0001160",
+        "fileName": "R0001160.jpg",
+        "orientation": "portrait"
+      }
+    ]
+  },
   {
     "itemID": "project-6",
     "title": "The Garden Spot",
