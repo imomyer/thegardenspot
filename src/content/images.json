@@ -1,4 +1,17 @@
 [
+      {
+    "itemID": "project-8",
+    "title": "The Garden Spot",
+    "project": "low lying",
+    "images": [
+      {
+        "title": "The Garden Spot",
+        "slug": "DSCF7903",
+        "fileName": "DSCF7903.jpg",
+        "orientation": "landscape"
+      }
+    ]
+  },
     {
     "itemID": "project-7",
     "title": "The Garden Spot",
